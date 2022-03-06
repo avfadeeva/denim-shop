@@ -1,0 +1,439 @@
+body {
+    min-width: 1366px;
+    height: 100vh;
+
+    margin: 0;
+
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #151C22;
+
+    background-color: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-bottom: 25px;
+
+    height: 75px;
+}
+
+.list {
+    width: 400px;
+
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 19px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.list-item {
+margin-right: 35px;
+padding: 25px 0;
+}
+
+.list-item:last-child {
+    margin-right: 0px;
+}
+
+.list-item .nav-link {
+    padding: 5px;
+    color: inherit;
+}
+
+.logo {
+margin: 0 auto;
+}
+
+.menu {
+    display: flex;
+
+    margin: 0px;
+    padding: 0px;
+
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 400px;
+}
+
+.menu li {  
+    margin-right: 35px;
+    padding: 25px 0;
+}
+
+.menu li:last-child {
+    margin-right: 0px;
+}
+
+/* PROMO */
+
+.promo {
+    background-color: #F1F2F4;
+    min-height: 617px;
+}
+
+.promo-wrapper {
+    display: flex;
+    position: relative;
+
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+.promo-text-column {
+    align-self: center;
+    justify-content: end;
+
+    width: 520px;
+}
+
+.promo-title {
+    color: #727A82;
+    font-family: "Work Sans Regular 400", sans-serif;
+
+    margin: 0px;
+
+}
+
+.promo-text {
+    display: flex;
+
+    color: inherit;
+    font-family: "Anton", sans-serif;
+    text-transform: uppercase;
+
+    font-size: 128px;
+    line-height: 188px;
+
+    padding: 0px;
+
+    margin: 0px;
+    margin-bottom: 50px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #151C22;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    padding: 27px 24px;
+
+    color:#FFFFFF;
+    font-family: "Work Sans Bold",sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+
+.promo-button {
+    margin: 0px;
+    margin-right: auto;
+}
+
+.promo-text-column .next {
+    font-size: 0px;
+    display: block;
+    background-image: url(/img/arrow.svg);
+    background-repeat: no-repeat;
+    padding: 5px;
+
+    position: absolute;
+    bottom: 50px;
+    left: 15px;
+}
+
+.promo-img-column {
+    position: relative;
+    width: 430px;
+    padding: 50px 50px;
+
+}
+
+.promo-img {
+    vertical-align: middle;
+    position: relative;
+    z-index: 3;
+}
+
+.diagonal-top {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.diagonal-bottom {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+
+
+/* BESTSELLERS*/
+
+
+
+.bestsellers {
+    padding-top: 130px;
+    padding-bottom: 105px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.h2 {
+
+font-weight: 700;
+font-size: 32px;
+line-height: 38px;
+}
+
+.link {
+    display: inline-block;
+    color: #151C22;
+    border-bottom: 2px solid #151C22 ;
+
+    padding: 5px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.card img {
+    vertical-align: middle;
+    margin-bottom: 25px;
+}
+
+.card h3{
+    margin-bottom: 15px;
+}
+
+.price {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+
+
+/*  NEWS   */
+
+
+
+.news {
+    padding-bottom: 105px;
+}
+
+.news-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.news-text-column {
+    width: 400px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    position: relative;
+
+    padding: 52px 47px 23px 43px;
+    margin-top: 31px;
+
+    background-color: #F1F2F4;
+}
+
+.news-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+
+    margin-bottom: 27px;
+}
+
+time {
+    color: #000000;
+    font-style: 400;
+
+    margin-bottom: 13px;
+}
+
+.news-text {
+    color: #727A82;
+
+    font-weight: 400;
+
+    margin-bottom: 24px;
+}
+
+.news-diagonal {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    z-index: -1;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: #151C22;
+    color: #FFFFFF;
+
+    min-height: 222px;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+}
+
+.footer-logo {
+    margin-bottom: 35px;
+}
+
+.footer-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-bottom: 35px;
+}
+
+.footer-item {
+    margin-right: 35px;
+}
+
+.footer-item:last-child {
+    margin-right: 0px;
+}
+
+.footer-link {
+    color: #FFFFFF;
+}
+
+.social-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-bottom: 50px;
+}
+
+.social-item {
+    margin-right: 35px;
+}
+
+.social-item:last-child {
+    margin-right: 0px;
+}
+
+.fb {
+    display: block;
+    font-size: 0px;
+
+    width: 11px;
+    height: 20px;
+
+    background-image: url(/img/fb.svg);
+    background-repeat: no-repeat;
+}
+
+.inst {
+    display: block;
+    font-size: 0px;
+
+    width: 20px;
+    height: 20px;
+
+    background-image: url(/img/instagram.svg);
+    background-repeat: no-repeat;
+}
+
+.pi {
+    display: block;
+    font-size: 0px;
+
+    width: 21px;
+    height: 20px;
+
+    background-image: url(/img/pinterest.svg);
+    background-repeat: no-repeat;
+}
+
+.tw {
+    display: block;
+    font-size: 0px;
+
+    width: 20px;
+    height: 16px;
+
+    background-image: url(/img/twitter.svg);
+    background-repeat: no-repeat;
+}
